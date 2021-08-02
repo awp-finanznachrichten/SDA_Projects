@@ -1,0 +1,45 @@
+<document>
+  <topics />
+  <channel>HUM/LIF</channel>
+  <catchline>titreCourt</catchline>
+  <desk>suf</desk>
+  <distribution_history>
+    <lastmessages />
+  </distribution_history>
+  <region />
+  <autopublishdate />
+  <author>fl</author>
+  <subheadline />
+  <providerLocation>Berne</providerLocation>
+  <topics />
+  <urgency>4</urgency>
+  <storytype metadataid="100435">news</storytype>
+  <memo />
+  <byline />
+  <events>
+    <event />
+    <event />
+  </events>
+  <text>&lt;p&gt;Paragraphe1&lt;/p&gt;&lt;p&gt;Paragraphe2&lt;/p&gt;&lt;p&gt;Paragraphe3&lt;/p&gt;</text>
+  <geolocations>
+    <geolocation metadataid="122045">CH</geolocation>
+  </geolocations>
+  <lead>Leadtxt</lead>
+  <sportdetail />
+  <genre metadataid="101812">CUR</genre>
+  <shortname />
+  <provider>ats</provider>
+  <language metadataid="12">fr</language>
+  <ignoreinbulletin>0</ignoreinbulletin>
+  <urgencyOnl>4</urgencyOnl>
+  <hyperlink />
+  <title>titreLong</title>
+  <catchword>SIM-Loteries</catchword>
+  <updatemethod />
+  <embargo />
+  <titleOnl />
+  <typeextension>sdaFuture sda/ats</typeextension>
+  <service />
+  <note />
+  <country />
+</document>

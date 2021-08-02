@@ -1,0 +1,47 @@
+<document>
+  <topics />
+  <catchline>titreCourt</catchline>
+  <channel>POL/HEA</channel>
+  <desk>pff</desk>
+  <autopublishdate />
+  <region />
+  <distribution_history>
+    <lastmessages />
+  </distribution_history>
+  <author>fl</author>
+  <subheadline />
+  <providerLocation>Berne</providerLocation>
+  <topics />
+  <topics />
+  <urgency>3</urgency>
+  <storytype metadataid="100435">news</storytype>
+  <memo />
+  <byline />
+  <events>
+    <event />
+    <event />
+    <event />
+  </events>
+  <text>&lt;p&gt;Paragraphe1&lt;/p&gt;&lt;p&gt;Paragraphe2&lt;/p&gt;&lt;p&gt;Paragraphe3&lt;/p&gt;&lt;p&gt;Paragraphe4&lt;/p&gt;&lt;p&gt;Paragraphe5&lt;/p&gt;&lt;p&gt;Paragraphe6&lt;/p&gt;&lt;p&gt;Paragraphe7&lt;/p&gt;&lt;p&gt;Paragraphe8&lt;/p&gt;&lt;p&gt;Paragraphe9&lt;/p&gt;</text>
+  <geolocations>
+    <geolocation metadataid="122045">CH</geolocation>
+  </geolocations>
+  <lead>Leadtxt</lead>
+  <sportdetail />
+  <genre metadataid="101812">CUR</genre>
+  <shortname />
+  <provider>ats</provider>
+  <language metadataid="12">fr</language>
+  <ignoreinbulletin>0</ignoreinbulletin>
+  <urgencyOnl>3</urgencyOnl>
+  <hyperlink />
+  <catchword>Coronavirus</catchword>
+  <title>titreLong</title>
+  <updatemethod />
+  <embargo />
+  <titleOnl />
+  <service />
+  <typeextension>sdaFuture sda/ats</typeextension>
+  <note />
+  <country />
+</document>

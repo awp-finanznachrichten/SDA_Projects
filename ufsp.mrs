@@ -1,0 +1,45 @@
+<document>
+  <topics />
+  <channel>POL/HEA</channel>
+  <catchline>titreCourt</catchline>
+  <desk>rti</desk>
+  <distribution_history>
+    <lastmessages />
+  </distribution_history>
+  <region />
+  <autopublishdate />
+  <author>fl</author>
+  <subheadline />
+  <providerLocation>BERNA</providerLocation>
+  <topics />
+  <urgency>3</urgency>
+  <storytype metadataid="100435">news</storytype>
+  <memo />
+  <byline />
+  <events>
+    <event />
+    <event />
+  </events>
+  <text>&lt;p&gt;Paragraphe1&lt;/p&gt;&lt;p&gt;Paragraphe2&lt;/p&gt;&lt;p&gt;Paragraphe3&lt;/p&gt;</text>
+  <geolocations>
+    <geolocation metadataid="122045">CH</geolocation>
+  </geolocations>
+  <lead>Leadtxt</lead>
+  <sportdetail />
+  <genre metadataid="101812">CUR</genre>
+  <shortname />
+  <provider>ats</provider>
+  <language metadataid="14">it</language>
+  <ignoreinbulletin>0</ignoreinbulletin>
+  <urgencyOnl>3</urgencyOnl>
+  <hyperlink />
+  <title>titreLong</title>
+  <catchword>Epidemia</catchword>
+  <updatemethod />
+  <embargo />
+  <titleOnl />
+  <typeextension>sdaFuture sda/ats</typeextension>
+  <service />
+  <note />
+  <country />
+</document>

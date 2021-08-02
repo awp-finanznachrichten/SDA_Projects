@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1627899014687.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E2B21B6D",
+    "lastKnownWriteTime" : 1626860468,
+    "last_content_update" : 1626860468,
+    "path" : "C:/Automatisierungen/impfzahlen/update_datawrapper.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "42,0",
+        "scrollLine" : "28"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

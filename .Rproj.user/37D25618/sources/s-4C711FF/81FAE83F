@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1627898802133.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "167|26|185|0|\n",
+    "hash" : "0",
+    "id" : "81FAE83F",
+    "lastKnownWriteTime" : 1627898981,
+    "last_content_update" : 1627899094880,
+    "path" : "C:/Automatisierungen/SDA_Projects/lotro-1783557.r",
+    "project_path" : "lotro-1783557.r",
+    "properties" : {
+        "cursorPosition" : "332,0",
+        "scrollLine" : "316"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
