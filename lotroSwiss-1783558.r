@@ -11,6 +11,7 @@ library(XML)
 library(xml2)
 library(git2r)
 
+setwd("C:/Automatisierungen/SDA_Projects")
 
 gitcommit <- function(msg = "commit from Rstudio", dir = getwd()){
   cmd = sprintf("git commit -m\"%s\"",msg)
