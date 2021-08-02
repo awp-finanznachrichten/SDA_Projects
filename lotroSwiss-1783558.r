@@ -8,6 +8,44 @@ library(gsubfn)
 library(lubridate)
 library(naptime)
 library(XML)
+library(xml2)
+library(git2r)
+
+
+gitcommit <- function(msg = "commit from Rstudio", dir = getwd()){
+  cmd = sprintf("git commit -m\"%s\"",msg)
+  system(cmd)
+}
+
+gitstatus <- function(dir = getwd()){
+  cmd_list <- list(
+    cmd1 = tolower(substr(dir,1,2)),
+    cmd2 = paste("cd",dir),
+    cmd3 = "git status"
+  )
+  cmd <- paste(unlist(cmd_list),collapse = " & ")
+  shell(cmd)
+}
+
+gitadd <- function(dir = getwd()){
+  cmd_list <- list(
+    cmd1 = tolower(substr(dir,1,2)),
+    cmd2 = paste("cd",dir),
+    cmd3 = "git add --all"
+  )
+  cmd <- paste(unlist(cmd_list),collapse = " & ")
+  shell(cmd)
+}
+
+gitpush <- function(dir = getwd()){
+  cmd_list <- list(
+    cmd1 = tolower(substr(dir,1,2)),
+    cmd2 = paste("cd",dir),
+    cmd3 = "git push"
+  )
+  cmd <- paste(unlist(cmd_list),collapse = " & ")
+  shell(cmd)
+}
 
 
 ###### Tool box
@@ -348,12 +386,21 @@ dateFormat
 #Create the file name and then the file
 txtSwiss<-createFileName("lotoSwiss.mrs")
 
-createFile("lotoN.mrs",txtSwiss,leadSwiss,cash,par2, par3, titco, tit)
+createFile("lotoN.mrs",paste0("Output/",txtSwiss),leadSwiss,cash,par2, par3, titco, tit)
+
+#Make Commit
+token <- read.csv("C:/Automatisierungen/Github_Token/token.txt",header=FALSE)[1,1]
+
+git2r::config(user.name = "awp-finanznachrichten",user.email = "sw@awp.ch")
+#try(git2r::cred_token(token))
+gitadd()
+gitcommit()
+gitpush()
 
 #Send everything to dropbox
-library(httpuv)
-library(rdrop2)
+#library(httpuv)
+#library(rdrop2)
 
-token <- readRDS("token.rds")
+#token <- readRDS("token.rds")
 
-drop_upload(txtSwiss, path='Loto', dtoken = token)
+#drop_upload(txtSwiss, path='Loto', dtoken = token)
