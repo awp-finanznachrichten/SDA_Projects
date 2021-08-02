@@ -801,19 +801,27 @@ txti<-createFileName("ufsp.mrs",pathIt)
 
 
 # Make the actual .mrs file, for italian, still with the older system
-createFile9('ofsp9.mrs', txt, 8, titleShort,titleLong,lead,parF)
-createFile9('bag9par.mrs', txtd, 9, titleShortD,titleLongD,leadD,paraD)
-createFile("ufsp.mrs",txti,leadI,par1I,par2I,par3I,titleShortI,titleLongI)
+createFile9('ofsp9.mrs', paste0("Output/",txt), 8, titleShort,titleLong,lead,parF)
+createFile9('bag9par.mrs', paste0("Output/",txtd), 9, titleShortD,titleLongD,leadD,paraD)
+createFile("ufsp.mrs",paste0("Output/",txti),leadI,par1I,par2I,par3I,titleShortI,titleLongI)
 
+#Make Commit
+token <- read.csv("C:/Automatisierungen/Github_Token/token.txt",header=FALSE)[1,1]
+
+git2r::config(user.name = "awp-finanznachrichten",user.email = "sw@awp.ch")
+#try(git2r::cred_token(token))
+gitadd()
+gitcommit()
+gitpush()
 
 # Final step, sending everything to dropbox
-library(httpuv)
-library(rdrop2)
+#library(httpuv)
+#library(rdrop2)
 
 # Use the token.rds file with the data to access dropbox, you need to create your own
-token <- readRDS("token.rds")
+#token <- readRDS("token.rds")
 
 # path bring it to the right folder in dropbox
-drop_upload(txt, path='ofsp', dtoken = token)
-drop_upload(txtd, path='ofsp', dtoken = token)
-drop_upload(txti, path='ofsp', dtoken = token)
+#drop_upload(txt, path='ofsp', dtoken = token)
+#drop_upload(txtd, path='ofsp', dtoken = token)
+#drop_upload(txti, path='ofsp', dtoken = token)

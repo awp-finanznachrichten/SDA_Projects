@@ -344,7 +344,7 @@ gitpush()
 #library(httpuv)
 #library(rdrop2)
 
-#drop_auth(key="hm0pkhtds6l9uah", secret = "o99hy86vm5l4kee", rdstoken = "token.RDS")
+#token <- drop_auth(key="hm0pkhtds6l9uah", secret = "o99hy86vm5l4kee", rdstoken = "token.RDS")
 
 #token <- readRDS("token.rds")
 #drop_upload(paste0("Output/",txtEuro), path='Loto', dtoken = token)
