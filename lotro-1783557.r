@@ -329,14 +329,14 @@ dateFormat
 
 # Create the file name and the final file
 txtEuro<-createFileName("loto.mrs")
-createFile("lotoN.mrs",paste0("Output/",txtEuro),leadEuro,cash,par2,par3,titco,tit)
+createFile("lotoN.mrs",paste0("Output/Lotto/",txtEuro),leadEuro,cash,par2,par3,titco,tit)
 
 
 #Make Commit
 token <- read.csv("C:/Automatisierungen/Github_Token/token.txt",header=FALSE)[1,1]
 
-git2r::config(user.name = "awp-finanznachrichten",user.email = "sw@awp.ch")
-try(git2r::cred_token(token))
+#git2r::config(user.name = "awp-finanznachrichten",user.email = "sw@awp.ch")
+git2r::cred_token(token)
 gitadd()
 gitcommit()
 gitpush()
