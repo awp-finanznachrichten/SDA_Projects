@@ -336,7 +336,7 @@ createFile("lotoN.mrs",paste0("Output/",txtEuro),leadEuro,cash,par2,par3,titco,t
 token <- read.csv("C:/Automatisierungen/Github_Token/token.txt",header=FALSE)[1,1]
 
 git2r::config(user.name = "awp-finanznachrichten",user.email = "sw@awp.ch")
-#try(git2r::cred_token(token))
+try(git2r::cred_token(token))
 gitadd()
 gitcommit()
 gitpush()
@@ -345,8 +345,6 @@ gitpush()
 # Sending the file to dropbox
 #library(httpuv)
 #library(rdrop2)
-
-#token <- drop_auth(key="hm0pkhtds6l9uah", secret = "o99hy86vm5l4kee", rdstoken = "token.RDS")
 
 #token <- readRDS("token.rds")
 #drop_upload(paste0("Output/",txtEuro), path='Loto', dtoken = token)
