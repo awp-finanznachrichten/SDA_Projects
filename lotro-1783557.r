@@ -336,7 +336,7 @@ createFile("lotoN.mrs",paste0("Output/Lotto/",txtEuro),leadEuro,cash,par2,par3,t
 token <- read.csv("C:/Automatisierungen/Github_Token/token.txt",header=FALSE)[1,1]
 
 #git2r::config(user.name = "awp-finanznachrichten",user.email = "sw@awp.ch")
-git2r::cred_token(token)
+invisible(git2r::cred_token(token))
 gitadd()
 gitcommit()
 gitpush()
