@@ -157,7 +157,7 @@ loopy<- h%>% html_nodes(xpath ='/html/body/main/section[2]/section/div[4]/div/di
 loopy
 
 # a bit of an older system, it does use the day as a word
-today<-dayM(wday(Sys.time()-100000),"fr")
+today<-dayM(wday(Sys.time()),"fr")
 
 str_detect(loopy, today, negate = FALSE)
 
@@ -329,7 +329,12 @@ dateFormat
 
 # Create the file name and the final file
 txtEuro<-createFileName("loto.mrs")
+
+#Github
 createFile("lotoN.mrs",paste0("Output/Lotto/",txtEuro),leadEuro,cash,par2,par3,titco,tit)
+
+#FTP
+createFile("lotoN.mrs",paste0("C:/SDA_Output/Lotto/",txtEuro),leadEuro,cash,par2,par3,titco,tit)
 
 
 #Make Commit

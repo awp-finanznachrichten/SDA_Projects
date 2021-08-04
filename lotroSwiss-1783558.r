@@ -387,7 +387,11 @@ dateFormat
 #Create the file name and then the file
 txtSwiss<-createFileName("lotoSwiss.mrs")
 
+#Github
 createFile("lotoN.mrs",paste0("Output/Lotto/",txtSwiss),leadSwiss,cash,par2, par3, titco, tit)
+
+#FTP
+createFile("lotoN.mrs",paste0("C:/SDA_Output/Lotto/",txtSwiss),leadSwiss,cash,par2, par3, titco, tit)
 
 #Make Commit
 token <- read.csv("C:/Automatisierungen/Github_Token/token.txt",header=FALSE)[1,1]

@@ -803,9 +803,17 @@ txti<-createFileName("ufsp.mrs",pathIt)
 
 
 # Make the actual .mrs file, for italian, still with the older system
+
+#Github
 createFile9('ofsp9.mrs', paste0("Output/Covid/",txt), 8, titleShort,titleLong,lead,parF)
 createFile9('bag9par.mrs', paste0("Output/Covid/",txtd), 9, titleShortD,titleLongD,leadD,paraD)
 createFile("ufsp.mrs",paste0("Output/Covid/",txti),leadI,par1I,par2I,par3I,titleShortI,titleLongI)
+
+#FTP
+createFile9('ofsp9.mrs', paste0("C:/SDA_Output/Covid/",txt), 8, titleShort,titleLong,lead,parF)
+createFile9('bag9par.mrs', paste0("C:/SDA_Output/Covid/",txtd), 9, titleShortD,titleLongD,leadD,paraD)
+createFile("ufsp.mrs",paste0("C:/SDA_Output/Covid/",txti),leadI,par1I,par2I,par3I,titleShortI,titleLongI)
+
 
 #Make Commit
 token <- read.csv("C:/Automatisierungen/Github_Token/token.txt",header=FALSE)[1,1]
