@@ -811,7 +811,7 @@ createFile("ufsp.mrs",paste0("Output/Covid/",txti),leadI,par1I,par2I,par3I,title
 token <- read.csv("C:/Automatisierungen/Github_Token/token.txt",header=FALSE)[1,1]
 
 #git2r::config(user.name = "awp-finanznachrichten",user.email = "sw@awp.ch")
-git2r::cred_token(token)
+invisible(git2r::cred_token(token))
 gitadd()
 gitcommit()
 gitpush()
